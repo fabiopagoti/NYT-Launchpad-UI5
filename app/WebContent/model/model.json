@@ -1,0 +1,58 @@
+{
+	"articles": {
+		"hits": 100
+	},
+	
+	"best_sellers":{
+		"hits": 25
+	},
+
+	"campaign_finance": {
+		"hits": 13045
+	},
+
+	"community": {
+		"hits": 42147
+	},
+
+	"congress": {
+		"hits": 12
+	},
+
+	"districts": {
+		"hits": 171 
+	},
+
+	"event_listings": {
+		"hits": 9
+	},
+
+	"geographic": {
+		"hits": 314
+	},
+
+	"most_popular": {
+		"hits": 10
+	},
+
+	"movie_reviews": {
+		"hits": 6321
+	},
+
+	"real_estate": {
+		"hits": 3052
+	},
+
+	"semantic": {
+		"hits": 4121515
+	},
+
+	"newswire": {
+		"hits": 48
+	},
+
+	"tags": {
+		"hits": 4187412
+	}
+
+}

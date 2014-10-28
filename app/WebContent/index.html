@@ -1,0 +1,49 @@
+	<!DOCTYPE HTML>
+	<html>
+		<head>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+			<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+					type="text/javascript"
+					id="sap-ui-bootstrap"
+					data-sap-ui-libs="sap.m,sap.ui.commons"
+					data-sap-ui-theme="sap_bluecrystal">
+			</script>
+			
+			<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+			<script>
+			// set i18n model
+			
+			sap.ui.localResources("nyt-launchpad-m");
+
+	        var i18nModel = new sap.ui.model.resource.ResourceModel(
+	        {
+	            bundleUrl : "i18n/messageBundle.properties"
+	        });
+
+	        sap.ui.getCore().setModel(i18nModel, "i18n");
+
+	        var mainModel = new sap.ui.model.json.JSONModel("model/model.json");
+			
+			var app = new sap.m.App({
+				initialPage:"idmain1",
+				height: "100%",
+				width: "100%",
+			});
+
+			var view = sap.ui.view({id:"idmain1", viewName:"nyt-launchpad-m.main", type:sap.ui.core.mvc.ViewType.JS});
+			sap.ui.getCore().setModel(mainModel);
+			// view.setModel(mainModel);
+
+			app.addPage(view);
+			app.placeAt("content");
+			
+			</script>
+
+		</head>
+		<body class="sapUiBody" role="application">
+			<div id="content"></div>
+		</body>
+	</html>
