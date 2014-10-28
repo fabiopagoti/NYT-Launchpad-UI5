@@ -19,34 +19,51 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 	 * @memberOf nyt-launchpad-m.main
 	 */
 	createContent : function(oController) {
+
 		var page =  new sap.m.Page({
 			title : "New York Times",
-			icon: "icons/nyt_logo_black.png",
+			showNavButton: true,
+			backgroundDesign: sap.m.PageBackgroundDesign.Standard, 			
+//			 sap.m.PageBackgroundDesign.List
+//			 sap.m.PageBackgroundDesign.Solid
+//			 sap.m.PageBackgroundDesign.Transparent
+
 			content : [
 
-			new sap.m.TileContainer("tile_container", {
+				new sap.m.TileContainer("tile_container", {
 				height: "800px",
 				width: "100%",
+				// editable: true,
+				allowAdd: true,
 				tiles : [
 
 				new sap.m.StandardTile("tile_article", {
-					title : "Article Search",
-					info : "Search Times articles from 1851 to today",
+					title : "{i18n>Tile_Title_Article_Search}",
+					info : "{i18n>Tile_Info_Article_Search}",
+					numberUnit: "{i18n>Tile_NumberUnit_Article_Search}",
+					number: "{/articles/hits}",
 					icon: "icons/document.png",
-				// type: sap.m.StandardTileType.Monitor,
-				// type: sap.m.StandardTileType.Create,
+					iconDensityAware: false,
+					removable: false,
+					//activeIcon: "icons/increase.png",
+					// type: sap.m.StandardTileType.Monitor,
+					// type: sap.m.StandardTileType.Create,
 				}),
 
 				new sap.m.StandardTile("tile_best_seller", {
-					title : "Best Seller",
-					info : "Get data from all best-seller lists",
-//					removable : true,
-					icon: "icons/increase.png"
+					title : "{i18n>Tile_Title_Best_Seller}",
+					info : "{i18n>Tile_Info_Best_Seller}",
+					numberUnit : "{i18n>Tile_NumberUnit_Best_Seller}",
+					number: "{/best_sellers/hits}",
+					icon: "icons/increase.png",
+					removable : false,
 				}),
 
 				new sap.m.StandardTile("tile_campaign_finance", {
-					title : "Campaign Finance",
-					info : "Get presidential campaign contribution and expenditure data ",
+					title : "{i18n>Tile_Title_Campaign_Finance}",
+					info : "{i18n>Tile_Info_Campaign_Finance}",
+					numberUnit : "{i18n>Tile_NumberUnit_Campaign_Finance}",
+					number: "{/campaign_finance/hits}",
 					icon: "icons/money.png"
 				// infoState: sap.ui.core.ValueState.Success,
 				// sap.ui.core.ValueState.Error
@@ -56,72 +73,99 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 				}),
 
 				new sap.m.StandardTile("tile_community", {
-					title : "Community",
-					info : "Get comments by NYTimes.com users.",
+					title : "{i18n>Tile_Title_Community}",
+					info : "{i18n>Tile_Info_Community}",
+					numberUnit : "{i18n>Tile_NumberUnit_Community}",
+					number: "{/community/hits}",
 					icon: "icons/new_page.png"
 				}),
 
 				new sap.m.StandardTile("tile_congress", {
-					title : "Congress",
-					info : "Get U.S. Congressional vote data, including information about specific House and Senate members",
+					title : "{i18n>Tile_Title_Congress}",
+					info : "{i18n>Tile_Info_Congress}",
+					numberUnit : "{i18n>Tile_NumberUnit_Congress}",
+					number: "{/congress/hits}",
 					icon: "icons/document.png"
 				}),
 
 				new sap.m.StandardTile("tile_districts", {
-					title : "Districts",
-					info : "Get political districts based on a pair of coordinates",
+					title : "{i18n>Tile_Title_Districts}",
+					info : "{i18n>Tile_Info_Districts}",
+					numberUnit : "{i18n>Tile_NumberUnit_Districts}",
+					number: "{/districts/hits}",
 					icon: "icons/card.png"
 				}),
 
 				new sap.m.StandardTile("tile_event", {
-					title : "Event Listings",
-					info : "Get information about hand-picked events in New York City",
+					title : "{i18n>Tile_Title_Event_Listings}",
+					info : "{i18n>Tile_Info_Event_Listings}",
+					numberUnit : "{i18n>Tile_NumberUnit_Event_Listings}",
+					number: "{/event_listings/hits}",
 					icon: "icons/pie_chart.png"
 				}),
 
 				new sap.m.StandardTile("tile_geographic", {
-					title : "Geographic",
-					info : "Use linked data to enhance location concepts used in The New York Times' controlled vocabulary.",
+					title : "{i18n>Tile_Title_Geographic}",
+					info : "{i18n>Tile_Info_Geographic}",
+					numberUnit : "{i18n>Tile_NumberUnit_Geographic}",
+					number: "{/geographic/hits}",
 					icon: "icons/money.png"
 				}),
 
 				new sap.m.StandardTile("tile_most_popular", {
-					title : "Most Popular",
-					info : "Most frequently blog post and articles e-mailed, shared and viewed",
+					title : "{i18n>Tile_Title_Most_Popular}",
+					info : "{i18n>Tile_Info_Most_Popular}",
+					numberUnit : "{i18n>Tile_NumberUnit_Most_Popular}",
+					number: "{/most_popular/hits}",
 					icon: "icons/increase.png"
 				}),
 
 				new sap.m.StandardTile("tile_movie_reviews", {
-					title : "Movie Reviews",
-					info : "Get links to reviews and NYT Critics' Picks, and search movie reviews by keyword",
+					title : "{i18n>Tile_Title_Movie_Reviews}",
+					info : "{i18n>Tile_Info_Movie_Reviews}",
+					numberUnit : "{i18n>Tile_NumberUnit_Movie_Reviews}",
+					number: "{/movie_reviews/hits}",
+					icon: "icons/document.png"
 				}),
 
 				new sap.m.StandardTile("tile_real_estate", {
-					title : "Real Estate",
-					info : "Real estate listings",
+					title : "{i18n>Tile_Title_Real_Estate}",
+					info : "{i18n>Tile_Info_Real_Estate}",
+					numberUnit : "{i18n>Tile_NumberUnit_Real_Estate}",
+					number: "{/real_estate/hits}",
+					icon: "icons/increase.png"
 				}),
 
 				new sap.m.StandardTile("tile_semantic", {
-					title : "Semantic",
-					info : "Access to people,places,organanizations and descriptors",
+					title : "{i18n>Tile_Title_Semantic}",
+					info : "{i18n>Tile_Info_Semantic}",
+					numberUnit : "{i18n>Tile_NumberUnit_Semantic}",
+					number: "{/semantic/hits}",
+					icon: "icons/card.png"
 				}),
 
 				new sap.m.StandardTile("tile_newswire", {
-					title : "Newswire",
-					info : "Up-to-the-minute stream",
+					title : "{i18n>Tile_Title_Newswire}",
+					info : "{i18n>Tile_Info_Newswire}",
+					numberUnit : "{i18n>Tile_NumberUnit_Newswire}",
+					number: "{/newswire/hits}",
+					icon: "icons/pie_chart.png"
 				}),
 
 				new sap.m.StandardTile("tile_timestags", {
-					title : "Tags",
-					info : "Tagged Terms",
+					title : "{i18n>Tile_Title_Tags}",
+					info : "{i18n>Tile_Info_Tags}",
+					numberUnit : "{i18n>Tile_NumberUnit_Tags}",
+					number: "{/tags/hits}",
+					icon: "icons/document.png"
 				}), ]
 
 			})
-
+	
 			]
 		});
 		
-		page.setEnableScrolling(true);
+		page.setEnableScrolling(true); // this is important
 		return page;
 	}
 

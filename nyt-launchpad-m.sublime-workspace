@@ -1,0 +1,216 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ad",
+				"admin-gui"
+			],
+			[
+				"admi",
+				"admin-gui"
+			],
+			[
+				"ma",
+				"manager-status"
+			],
+			[
+				"man",
+				"manager-jmx"
+			],
+			[
+				"mana",
+				"manager-status"
+			],
+			[
+				"rol",
+				"roles"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"role",
+				"rolename"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/fabiopagoti/Dev/hana/workspace_eclipse_hana/NYT-Launchpad-M/src",
+		"/Users/fabiopagoti/Dev/hana/workspace_eclipse_hana/NYT-Launchpad-M/WebContent",
+		"/Users/fabiopagoti/Dev/hana/workspace_eclipse_hana/NYT-Launchpad-M/WebContent/nyt-launchpad-m"
+	],
+	"file_history":
+	[
+		"/Users/fabiopagoti/Dev/hana/workspace_eclipse_hana/NYT-Launchpad-M/WebContent/nyt-launchpad-m/main.view.js",
+		"/Users/fabiopagoti/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/fabiopagoti/Dev/hana/openui5-runtime/resources/sap-ui-core-dbg.js",
+		"/Users/fabiopagoti/Dev/hana/openui5/src/testsuite/pom.xml",
+		"/Users/fabiopagoti/Dev/hana/openui5/Gruntfile.js",
+		"/Users/fabiopagoti/Dev/hana/openui5/pom.xml",
+		"/Users/fabiopagoti/Dev/hana/LocalUI5HelloWorld/WebContent/result.html",
+		"/Users/fabiopagoti/Dev/hana/LocalUI5HelloWorld/WebContent/index.html",
+		"/Users/fabiopagoti/Dev/nodejs/chatrooms/server.js",
+		"/Users/fabiopagoti/Dev/hana/openui5/package.json",
+		"/Users/fabiopagoti/Dev/nodejs/chatrooms/package.json",
+		"/Users/fabiopagoti/Desktop/node_test/server.js",
+		"/usr/local/bin/node",
+		"/Users/fabiopagoti/Dev/workspace_eclipse_hana/NYT-Launchpad/package.json",
+		"/Users/fabiopagoti/Dev/hana/openui5/README.md",
+		"/Library/apache-tomcat-8.0.14/wtpwebapps/openui5-sdk/resources/sap/ui/demokit/library-dbg.js",
+		"/Library/apache-tomcat-8.0.14/conf/catalina.policy",
+		"/Users/fabiopagoti/Dev/hana/openui5-sdk-1.24.2/demoapps.html",
+		"/Library/apache-tomcat-8.0.14/conf/tomcat-users.xml"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"resource",
+			"read",
+			"UI5En",
+			"demokit"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "nyt-launchpad-m.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 355.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
