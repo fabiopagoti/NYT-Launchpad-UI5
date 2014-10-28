@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" id="sap-ui-bootstrap" data-sap-ui-theme="sap_bluecrystal" data-sap-ui-libs="sap.m,sap.ui.commons"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+   
+		<script>
+
+      		var label = new sap.ui.commons.Label(
+					{
+						text: "Message"	
+					});
+			
+      
+		var textField = new sap.ui.commons.TextField(
+					{
+						value: "Hello World!"	
+					});
+			
+      label.placeAt("content");
+      textField.placeAt("content");
+		</script>
+
+</head>
+  
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

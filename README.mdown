@@ -1,0 +1,10 @@
+# New York Times Launchpad
+
+This is an open source created to help practicing the use of @OpenUI5 library.
+
+New York Times Launchpad contains a dashboard for other web apps created using UI5 and which uses at least one public API provided by New York Times.
+
+## More information
+
+* [OpenUI5](https://github.com/SAP/openui5/ "OpenUI5")
+* [New York Times Public API](http://developer.nytimes.com/ "NYT Public API")
