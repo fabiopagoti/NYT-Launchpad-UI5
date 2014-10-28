@@ -6,5 +6,5 @@ New York Times Launchpad contains a dashboard for other web apps created using U
 
 ## More information
 
-[OpenUI5](https://github.com/SAP/openui5/ "OpenUI5")
-[New York Times Public API](http://developer.nytimes.com/ "NYT Public API")
+* [OpenUI5](https://github.com/SAP/openui5/ "OpenUI5")
+* [New York Times Public API](http://developer.nytimes.com/ "NYT Public API")
