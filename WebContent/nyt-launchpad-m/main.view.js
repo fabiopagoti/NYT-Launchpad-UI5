@@ -31,7 +31,7 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 			content : [
 
 				new sap.m.TileContainer("tile_container", {
-				height: "800px",
+				height: "100%",
 				width: "100%",
 				// editable: true,
 				allowAdd: true,
@@ -165,7 +165,7 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 			]
 		});
 		
-		page.setEnableScrolling(true); // this is important
+		page.setEnableScrolling(false); // give a fixed height, so the TileContainer can use 100% height
 		return page;
 	}
 
