@@ -12,7 +12,23 @@ sap.ui.jsview("nyt-launchpad-m.other_page", {
 	},
 
 	createContent : function(oController) {
-	
+
+		var page =  new sap.m.Page("second", {
+			title : "Article Search",
+			showNavButton: true,
+			backgroundDesign: sap.m.PageBackgroundDesign.Standard, 			
+
+			content : [
+
+				new sap.ui.commons.TextView({
+					text: "Hi there! Welcome to the other view!!",
+				}),
+		
+			],
+		});
+
+		return page;
 	}
-}
+
+});
 
