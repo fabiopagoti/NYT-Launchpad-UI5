@@ -1,0 +1,41 @@
+	<!DOCTYPE HTML>
+	<html>
+		<head>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+			<script src="../../../../../openui5-runtime/resources/sap-ui-core.js" type="text/javascript"
+					id="sap-ui-bootstrap"
+					data-sap-ui-libs="sap.m,sap.ui.commons"
+					data-sap-ui-theme="sap_bluecrystal">
+			</script>
+			
+
+			<script>
+
+			sap.ui.localResources("views");
+
+			var app = new sap.m.App("app_sample", {
+				initialPage:"page_first",
+				height: "80%",
+				width: "80%",
+			});
+
+			var view = sap.ui.view({id:"page_first", viewName:"views.first_page", type:sap.ui.core.mvc.ViewType.JS});
+			
+			app.addPage(view);
+
+			app.placeAt("content");
+			
+			// var txt = new sap.ui.commons.TextView({
+			// 		text: "Hi there! Welcome to a sample app!!",
+			// 	});
+			// txt.placeAt("content");
+
+			</script>
+
+		</head>
+		<body class="sapUiBody" role="application">
+			<div id="content"></div>
+		</body>
+	</html>

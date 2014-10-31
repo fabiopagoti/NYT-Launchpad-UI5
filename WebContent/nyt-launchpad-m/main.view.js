@@ -33,6 +33,15 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 				allowAdd: true,
 				tiles : [
 
+					new sap.m.StandardTile("tile_sample", {
+						title : "Sample App",
+						info : "This is a sample",
+						numberUnit: "app",
+						number: "1",
+						icon: "icons/document.png",
+						press: oController.onPressSampleApp
+					}),
+
 					new sap.m.StandardTile("tile_article", {
 						title : "{i18n>Tile_Title_Article_Search}",
 						info : "{i18n>Tile_Info_Article_Search}",
@@ -41,7 +50,7 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 						icon: "icons/document.png",
 						iconDensityAware: false,
 						removable: false,
-						press: oController.onPressArticleSearch
+						//press: oController.onPressArticleSearch
 					}),
 
 					new sap.m.StandardTile("tile_best_seller", {
