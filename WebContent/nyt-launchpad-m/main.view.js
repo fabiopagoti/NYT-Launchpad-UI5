@@ -20,20 +20,16 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 	 */
 	createContent : function(oController) {
 
-		var page =  new sap.m.Page({
+		var page =  new sap.m.Page("first", {
 			title : "New York Times",
 			showNavButton: true,
 			backgroundDesign: sap.m.PageBackgroundDesign.Standard, 			
-//			 sap.m.PageBackgroundDesign.List
-//			 sap.m.PageBackgroundDesign.Solid
-//			 sap.m.PageBackgroundDesign.Transparent
 
 			content : [
 
 				new sap.m.TileContainer("tile_container", {
 				height: "100%",
 				width: "100%",
-				// editable: true,
 				allowAdd: true,
 				tiles : [
 
@@ -46,9 +42,6 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 						iconDensityAware: false,
 						removable: false,
 						press: oController.onPressArticleSearch
-						//activeIcon: "icons/increase.png",
-						// type: sap.m.StandardTileType.Monitor,
-						// type: sap.m.StandardTileType.Create,
 					}),
 
 					new sap.m.StandardTile("tile_best_seller", {
@@ -66,11 +59,6 @@ sap.ui.jsview("nyt-launchpad-m.main", {
 						numberUnit : "{i18n>Tile_NumberUnit_Campaign_Finance}",
 						number: "{/campaign_finance/hits}",
 						icon: "icons/money.png"
-					// infoState: sap.ui.core.ValueState.Success,
-					// sap.ui.core.ValueState.Error
-					// sap.ui.core.ValueState.None
-					// sap.ui.core.ValueState.Success
-					// sap.ui.core.ValueState.Warning
 					}),
 
 					new sap.m.StandardTile("tile_community", {

@@ -1,5 +1,3 @@
-other_page.controller.js
-
 sap.ui.controller("nyt-launchpad-m.other_page", {
 
 /**
@@ -8,7 +6,7 @@ sap.ui.controller("nyt-launchpad-m.other_page", {
 * @memberOf nyt-launchpad-m.other_page
 */
 	onInit: function() {
-		
+		console.log("other view loaded");
 	},
 
 /**
