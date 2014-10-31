@@ -6,7 +6,7 @@ sap.ui.controller("nyt-launchpad-m.main", {
 * @memberOf nyt-launchpad-m.main
 */
 	onInit: function() {
-		
+
 	},
 
 /**
@@ -35,18 +35,31 @@ sap.ui.controller("nyt-launchpad-m.main", {
 //
 //	}
 
-	onPressArticleSearch: function(){
+	onPressSampleApp: function(){
+		window.location.href = "apps/sample_app/sample_app.html";
 		
+		// @TODO: make use of push state so the page is not refreshed
+		// @SEE: http://stackoverflow.com/questions/824349/modify-the-url-without-reloading-the-page
+		// @SEE: http://stackoverflow.com/questions/3338642/updating-address-bar-with-new-url-without-hash-or-reloading-the-page
+		// @SEE: http://spoiledmilk.com/blog/html5-changing-the-browser-url-without-refreshing-page/
+		// @SEE: https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history
+		// @SEE: http://rosspenman.com/pushstate-jquery/
+		//window.history.pushState("object or string", "Title", "apps/sample_app/sample_app.html");
+		
+	},
 
-		// //sap.ui.localResources("nyt-launchpad-m");
-		// //jQuery.sap.registerModulePath("other", "");
+	onPressSomethingWhichLoadsAViewInsideTheLaunchpad: function(){
+
+		sap.ui.localResources("nyt-launchpad-m");
+		//jQuery.sap.registerModulePath("other", "");
+
 		var view_other = sap.ui.view({id:"other", viewName:"nyt-launchpad-m.other_page", type:sap.ui.core.mvc.ViewType.JS});
-
 		var app = sap.ui.getCore().byId("launchpad");
-
 		app.addPage(view_other);
 		app.to(view_other);
+	
+	},
 		
-	}
+
 
 });
